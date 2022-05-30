@@ -1,21 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.musicbox;
+package musicbox;
 
-import java.awt.Graphics;
 
-import java.awt.Toolkit;
-import java.io.File;
 import javax.sound.midi.*;
 import javax.swing.JFrame;
+import java.awt.Graphics;
+import java.awt.Toolkit;
+import java.io.File;
 
 
-/**
- *
- * @author ancap
- */
+
 public class Maquina extends JFrame implements Receiver {
 
     public static final String[] NOTAS = {"C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"};
@@ -131,14 +124,9 @@ public class Maquina extends JFrame implements Receiver {
              casillas[canal][data1].revalidate();
              casillas[canal][data1].repaint();
                 
-                
+
             }
         }
-
-
-
-
-
 
     }
 

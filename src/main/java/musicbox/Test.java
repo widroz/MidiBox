@@ -1,8 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package com.mycompany.musicbox;
+package musicbox;
 
 import java.util.Scanner;
 import javax.sound.midi.InvalidMidiDataException;
@@ -10,8 +6,9 @@ import javax.sound.midi.MidiUnavailableException;
 
 /**
  *
- * @author ancap
+ * @author widroz
  */
+
 public class Test {
 
     /**
@@ -28,8 +25,6 @@ public class Test {
         Scanner sc = new Scanner(System.in);
         String pausa = sc.nextLine();
         m.secuenciador.start();
-        
-
 
     }
 
