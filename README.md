@@ -3,4 +3,4 @@ A Java program which can be used to visualize polyphony of a .mid file.
 
 ### Examples
 
-![Fill Rectangles Mode](https://www.youtube.com/embed/tSGapqXVWQQ)
+[![Alt text](https://img.youtube.com/vi/configuroweb/0.jpg)](https://www.youtube.com/watch?v=tSGapqXVWQQ)
