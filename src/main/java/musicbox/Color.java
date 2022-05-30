@@ -1,23 +1,21 @@
-
 package musicbox;
-
 
 public class Color {
 
-    public static int obtenerColor(int Nota) {
-        String NombreNota = Maquina.NOTAS[Nota % 12];
-        int Octava = Nota / 12;
+    public static int getColor(int note) {
+        String noteName = Machine.NOTES[note % 12];
+        int octave = note / 12;
 
-        if (Octava > 7) {
+        if (octave > 7) {
             return 0xFFFFFF;
         }
-        if (Octava < 1) {
+        if (octave < 1) {
             return 0;
         }
 
-        if (NombreNota == "C") { //ROJO
+        if (noteName == "C") { //ROJO
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0x003300;
@@ -38,9 +36,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "C#" || NombreNota == "Db") { //INDIGO
+        if (noteName == "C#" || noteName == "Db") { //INDIGO
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0x000051;
@@ -61,9 +59,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "D") {
+        if (noteName == "D") {
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0x760000;
@@ -84,9 +82,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "Eb") { //MARRÓN
+        if (noteName == "Eb") { //MARRÓN
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0xbcaaa4;
@@ -107,9 +105,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "E") {
+        if (noteName == "E") {
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0x000a12;
@@ -130,9 +128,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "F") { //CYAN
+        if (noteName == "F") { //CYAN
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0x00363a;
@@ -153,9 +151,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "F#") { //ROSA
+        if (noteName == "F#") { //ROSA
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0x560027;
@@ -176,9 +174,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "G") { //ROJO
+        if (noteName == "G") { //ROJO
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0x7f0000;
@@ -199,9 +197,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "Ab") { //AZUL
+        if (noteName == "Ab") { //AZUL
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0x002171;
@@ -222,9 +220,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "A") { //GRIS
+        if (noteName == "A") { //GRIS
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0x212121;
@@ -245,9 +243,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "Bb") { //LIMA
+        if (noteName == "Bb") { //LIMA
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0x524c00;
@@ -268,9 +266,9 @@ public class Color {
 
         }
 
-        if (NombreNota == "B") {
+        if (noteName == "B") {
 
-            switch (Octava) {
+            switch (octave) {
 
                 case 1:
                     return 0xbc5100;
