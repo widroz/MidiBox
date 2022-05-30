@@ -167,5 +167,6 @@ public class NotePoint extends Component {
 
         // You can choose your favourite mode, just type here nameOfMode(g)
         NDimensionalmode(g);
+        centerMode(g);
     }
 }
