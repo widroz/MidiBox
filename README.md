@@ -2,7 +2,7 @@
 A Java program which can be used to visualize polyphony of a .mid file.
 
 ## How does it work?
-A midi file is given to the program.
+A midi file's rute is given to the program.
 The X axis is divided in 128 equidistant points. Each one is asociated with a musical note, from the lowest pitch (C0) to the highest (G9).
 The Y axis is divided in the number of channels existing in that midi file.
 
@@ -15,13 +15,13 @@ You can click one of these thumbnails, it will redirect to a short Youtube video
 ### Fill Rectangles Mode
 
 [![Fill Rectangles Mode](https://img.youtube.com/vi/tSGapqXVWQQ/0.jpg)](https://www.youtube.com/watch?v=tSGapqXVWQQ)
-[Rectangles gif](https://github.com/widroz/MidiBox/blob/main/gifs/rectangles.gif)
+![Rectangles gif](https://github.com/widroz/MidiBox/blob/main/gifs/rectangles.gif)
 
 
 ### Center Mode
 [![Center Mode](https://img.youtube.com/vi/xy9jdx1v4aA/0.jpg)](https://www.youtube.com/watch?v=xy9jdx1v4aA)
-[Center mode gif](https://github.com/widroz/MidiBox/blob/main/gifs/center.gif)
+![Center mode gif](https://github.com/widroz/MidiBox/blob/main/gifs/center.gif)
 
 ### N Dimensional Mode
 [![N Dimensional Mode](https://img.youtube.com/vi/WJ1Dp1ehDDY/0.jpg)](https://www.youtube.com/watch?v=WJ1Dp1ehDDY)
-[NDimensional gif](https://github.com/widroz/MidiBox/blob/main/gifs/ndimensional.gif)
+![NDimensional gif](https://github.com/widroz/MidiBox/blob/main/gifs/ndimensional.gif)
