@@ -32,28 +32,25 @@ public class NotePoint extends Component {
         y = Machine.mapChannelsTo1024(m.numberOfChannels, channel);
     }
 
-    public void modeStrokeRectangles(Graphics g) {
+    public void strokeRectanglesMode(Graphics g) {
         if (active) {
             for (int j = 0; j < m.numberOfChannels; j++) {
-                g.drawRect(x, y, Machine.map128To1920(data1 + 1) - x,(Machine.mapChannelsTo1024(m.numberOfChannels, channel + 1)) - y);
+                g.drawRect(x, y, Machine.map128To1920(data1 + 1) - x,
+                        (Machine.mapChannelsTo1024(m.numberOfChannels, channel + 1)) - y);
             }
 
         }
     }
 
-    public void modeRectangulosFill(Graphics g) {
+    public void fillRectanglesMode(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
-        g2.setRenderingHints(new RenderingHints(RenderingHints.KEY_ANTIALIASING,
-                RenderingHints.VALUE_ANTIALIAS_ON));
+        g2.setRenderingHints(new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON));
 
         if (active) {
-            for (int i = 0; i < 128; i++) {
                 for (int j = 0; j < m.numberOfChannels; j++) {
-
-                    if (m.points[j][i].active)
-                        g.drawLine(x, y, (m.points[j][i].x), (m.points[j][i].y));
+                    g.fillRect(x, y, Machine.map128To1920(data1 + 1) - x,
+                            (Machine.mapChannelsTo1024(m.numberOfChannels, channel + 1)) - y);
                 }
-            }
 
         }
     }
@@ -79,7 +76,6 @@ public class NotePoint extends Component {
         }
 
     }
-
 
     public void NDimensionalmode(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
@@ -143,8 +139,6 @@ public class NotePoint extends Component {
         }
     }
 
-
-
     public void setColor(Graphics g, String mode) {
         if (mode == "default") {
             g.setColor(new java.awt.Color(Color.getColor(data1)));
@@ -159,14 +153,12 @@ public class NotePoint extends Component {
     public void paint(Graphics g) {
         super.paint(g);
         Graphics2D g2 = (Graphics2D) g;
-        g2.setRenderingHints(new RenderingHints(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON));
-
+        g2.setRenderingHints(new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON));
 
         // You can choose between "default" to "gray"
         setColor(g, "default");
 
         // You can choose your favourite mode, just type here nameOfMode(g)
         NDimensionalmode(g);
-        centerMode(g);
     }
 }
