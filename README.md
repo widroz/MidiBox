@@ -1,7 +1,7 @@
 # MidiBox
 A Java program which can be used to visualize polyphony of a .mid file.
 
-##How does it work?
+## How does it work?
 A midi file is given to the program.
 The X axis is divided in 128 equidistant points. Each one is asociated with a musical note, from the lowest pitch (C0) to the highest (G9).
 The Y axis is divided in the number of channels existing in that midi file.
